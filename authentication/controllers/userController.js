@@ -1,50 +1,6 @@
 const User = require ("../modules/userModel.js")
 const bcrypt = require('bcrypt');
  
- /* const signUp = async (req, res)=>{
-    // we will check it the user in the database
-    const user = await User.findOne({username:req.body.username});//esitlık saglanıyorsa yada varsa bulur
-    //if yes return message
-if (user){
-    res.send({message: "user already exist"})
-}else{
-    const newUser = new User(req.body)
-    newUser.save()
-    console.log(newUser)
-    res.send({message:"new user created"})
-   
-}
-
-    // if no create in the database
-
-    
-   
-}
- const login = async (req, res)=>{
-
-  //we need to check if username exist
-
-  const user = await User.findOne({username: req.body.username})
-  // if yes we will check the password
-     // if password true . return the data
-     // if password wrong : return wrong password
-  if(user){
-    if(user.password===req.body.password){
-     res.send(user)
-    }else{
-        res.send({message:"wrong password"})
-    }
-  }
-    //if no return wrong username
-  else{
-    res.send({message:"user not exist, write true username"})
-  }
-   
-
-}
- */
-
-//*************************************************/
 
 
 const signUp = async (req,res)=>{
